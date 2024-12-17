@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="./assets/css/output.css" />
+</head>
+
+<body class="h-dvh">
+  <header class="w-full bg-black text-white">
+    <nav class="container mx-auto flex justify-between px-5 py-4">
+      <div class="w-1/6">
+        <h4>URL Shortener</h4>
+      </div>
+      <ul class="flex items-center justify-center gap-4 font-semibold">
+        <li><a href="/">Home</a></li>
+        <li><a href="./analytics">Analytics</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="pt-16 h-full bg-gray-100 ">
+    <div class="container mx-auto py-8 flex flex-col gap-4 items-center justify-center">
+      <div class="w-80 rounded-lg bg-white shadow-lg">
+        <form class="px-6 py-4" id="url-form">
+          <label class="block">
+            <span class="text-sm font-medium text-slate-700 whitespace-nowrap">Enter the URL</span>
+            <input type="text"
+              class="mt-1 block w-full rounded-md border-2 border-slate-300 px-3 py-2 focus:border-black focus:outline-none"
+              id="url-input" name="url" placeholder="Enter your URL" />
+          </label>
+          <br />
+          <div class="flex justify-end">
+            <button
+              class="ml-auto rounded-md border-2 bg-black hover:bg-white px-4 py-2 border-black font-semibold text-white hover:text-black"
+              type="submit" id="submit">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="overflow-auto rounded-lg shadow">
+        <table class="w-full">
+          <thead class="bg-gray-50 border-b-2 border-gray-200">
+            <tr class="bg-grey">
+              <th class="p-3 text-sm font-semibold tracking-wide text-left">Id</th>
+              <th class="p-3 text-sm font-semibold tracking-wide text-left">Short Link</th>
+              <th class="p-3 text-sm font-semibold tracking-wide text-left">Redirect Link</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y dvigra1">
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <script src="./assets/js/app.js"></script>
+  </footer>
+</body>
+
+</html>

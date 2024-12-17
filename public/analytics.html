@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="./assets/css/output.css" />
+</head>
+
+<body class="h-dvh">
+  <header class="w-full bg-black text-white">
+    <nav class="container mx-auto flex justify-between px-5 py-4">
+      <div class="w-1/6">
+        <h4>URL Shortener</h4>
+      </div>
+      <ul class="flex items-center justify-center gap-4 font-semibold">
+        <li><a href="/">Home</a></li>
+        <li><a href="./analytics">Analytics</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="pt-16 h-full bg-gray-100 ">
+    <div class="container mx-auto py-8 flex flex-col gap-4 items-center justify-center">
+      <div class="overflow-auto rounded-lg shadow">
+        <table class="w-full">
+          <thead class="bg-gray-50 border-b-2 border-gray-200">
+            <tr class="bg-grey">
+              <th class="p-3 text-sm font-semibold tracking-wide text-left">Id</th>
+              <th class="p-3 text-sm font-semibold tracking-wide text-left">Short Link</th>
+              <th class="p-3 text-sm font-semibold tracking-wide text-left">Redirect Link</th>
+              <th class="p-3 text-sm font-semibold tracking-wide text-left">Total CLicks</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y">
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <!-- <script src="./assets/js/app.js"></script> -->
+    <script src="./assets/js/analytics.js"></script>
+  </footer>
+</body>
+
+</html>
